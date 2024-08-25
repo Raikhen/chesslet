@@ -1,0 +1,21 @@
+/* Style for Chesslet Designer */
+
+.header {
+    margin-top: 1em;
+}
+
+.spare-pieces-top-4028b {
+    display: none !important;
+}
+
+.spare-pieces-bottom-ae20f {
+    padding-left: 59.5px !important;
+}
+
+.code-container {
+    margin-bottom: 1.5em;
+}
+
+.spare-pieces-7492f > img {
+    width: 59.5px !important;
+}

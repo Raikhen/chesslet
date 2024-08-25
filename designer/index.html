@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chesslet Designer</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="../img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="../lib/chessboard.css">
+        <link rel="stylesheet" href="../lib/skeleton.css">
+        <link rel="stylesheet" href="../lib/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
+        <script src="../lib/jquery-3.5.1.min.js"></script>
+        <script src="../lib/confetti.min.js"></script>
+        <script src="../lib/chessboard.js"></script>
+        <script src="../lib/chess.js"></script>
+    </head>
+    <body>
+        <div class="main container">
+            <div class="container header">
+                <img class="logo" src="../img/chesspieces/staunty/wN.svg" alt="Chesslet icon" />
+                <h1>Chesslet Designer</h1>
+            </div>
+            <div class="code-container">
+                <strong>
+                    Code:
+                </strong>
+                <span id="fen">
+                    4/4/4/4
+                </span>
+            </div>
+            <div id="board"></div>
+            <script type="module" src="main.js"></script>
+        </div>
+    </body>
+</html>

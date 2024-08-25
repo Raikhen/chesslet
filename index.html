@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Chesslet - Chess Puzzle Minigame</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Chesslet is a chess puzzle minigame where you have to capture your own pieces until there's only one remaining.">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="icon" sizes="48x48" href="img/favicon/favicon.ico">
+        <link rel="manifest" href="img/favicon/site.webmanifest">
+        <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="lib/chessboard.css">
+        <link rel="stylesheet" href="lib/skeleton.min.css">
+        <link rel="stylesheet" href="lib/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="lib/jquery-3.5.1.min.js"></script>
+        <script src="lib/confetti.min.js"></script>
+        <script src="lib/chessboard.js"></script>
+        <script src="lib/chess.min.js"></script>
+    </head>
+    <body>
+        <div class="main container">
+            <div class="container header">
+                <img class="logo" src="img/chesspieces/staunty/wN.svg" alt="Chesslet icon" />
+                <h1>Chesslet</h1>
+            </div>
+            <div class="container u-full-width">
+                <div class="row top-row">
+                    <div class="eight columns instructions-container">
+                        <strong>How to play</strong>
+                        <p>Capture your own pieces until there's only one remaining. Every move must be a capture!</p>
+                    </div>
+                    <div class="four columns levels-container">
+                        <select class="u-full-width" id="levels-dropdown">
+                          </select>
+                    </div>
+                </div>
+            </div>
+            <div id="board"></div>
+            <div class="buttons-container">
+                <button id="reset-button">Reset</button>
+                <button id="next-level-button">Next level</button>
+            </div>
+            <div class="container footer">
+                <span>
+                    Made by
+                    <strong>Dylan Fridman</strong>.
+                    <a id="acknowledgments-btn">
+                        <strong>Acknowledgments</strong>.
+                    </a>
+                </span>
+                <div id="donate-btn-container">
+                    <a href="https://www.paypal.com/donate/?business=4FZ2GMH6KX8EE&amount=5&no_recurring=1&item_name=Thanks+for+your+support%21&currency_code=USD" target="_blank">
+                        <strong>Buy me a coffee!</strong>
+                    </a>
+                </div>
+            </div>
+            <div id="game-completed-modal" class="modal">
+                <div class="container">
+                    <h1>Congratulations! &#127881; &#127881;</h1>
+                    <span>You've mastered the game and completed every level.</span>
+                </div>
+            </div>
+            <div id="acknowledgments-modal" class="modal">
+                <div class="container">
+                    <strong>Acknowledgments</strong>
+                    <p>I discovered this game in the Centro Cultural de la Ciencia in Buenos Aires, Argentina. The pieces were designed by <a href="https://github.com/sadsnake1" target="_blank">sadsnake1</a> for <a href="https://lichess.org/" target="_blank">lichess</a>. Many of my friends helped me out: Danni Lu, Emma Supattapone, Keegan Miller, and Luc Cote, among others.</p>
+                </div>
+            </div>
+            <script type="module" src="main.js"></script>
+        </div>
+    </body>
+</html>
