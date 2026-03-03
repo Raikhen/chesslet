@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "test": "pnpm --filter web test",
+    "start:mobile": "pnpm --filter mobile start"
+  }
+}

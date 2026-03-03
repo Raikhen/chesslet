@@ -1,1 +1,58 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+ios/
+android/
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# build
+/build
+coverage/
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# env
+.env*.local
+
+# misc
 .DS_Store
+*.pem
+*.swp
+*.swo
+
+# IDE
+.idea
+.vscode
+
+# SWC
+.swc/
+
+# typescript
+*.tsbuildinfo
+
+# Expo metadata
+APP_STORE_METADATA.md
+DEPLOY.md
